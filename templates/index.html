@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+
+    <script type=text/javascript>
+    function refresh()
+    {
+      const rows = document.getElementById("rows");
+      const parent = rows.parentNode;
+      parent.removeChild(rows);
+    }
+  </script>
+</head>
+<body>
+    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" 
+            stroke-linejoin="round" stroke-width="2" 
+            class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-2xl">StackOverflow Tag Predictor</span>
+          </a>
+        </div>
+      </header>
+<hr>
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-10 mx-auto">
+          <div class="flex flex-col text-center w-full mb-8">
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-4 text-gray-900">Tag prediction form</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Enter a title and Description of your Question and click on predict to see results.</p>
+          </div>
+          
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <form method="POST">
+            <div class="flex flex-wrap -m-2">
+
+                
+                <div class="p-2 w-full">
+                    <div class="relative">
+                    <label for="title" class="leading-7 text-sm text-gray-600">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter question title here" class="w-full bg-gray-100 bg-opacity-50 
+                    rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 
+                    focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 
+                    transition-colors duration-200 ease-in-out">
+                    </div>
+                </div>
+
+                <div class="p-2 w-full">
+                    <div class="relative">
+                    <label for="question" class="leading-7 text-sm text-gray-600">Question Description</label>
+                    <textarea id="question" name="question" placeholder="Enter question description here" class="w-full bg-gray-100 bg-opacity-50 rounded 
+                    border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 
+                    h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 
+                    ease-in-out"></textarea>
+                    </div>
+                </div>
+                <div class="p-2 w-full">
+                    <button id=process_input type= "submit" class="flex mx-auto text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none 
+                    hover:bg-yellow-300 rounded text-lg">Predict</button>
+                </div>
+            </div>
+          </form>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+            <div class="relative h-10 w-200 ...">  
+          <button onclick="refresh()" class="absolute top-0 right-0 h-10 w-32 bg-gray-300
+          hover:bg-gray-100 rounded text-black">Refresh tags</button>
+            </div>
+            <table style="border-collapse: separate;border-spacing: 7px 0;">
+              <tr id = "rows" >
+              {% for tags in result1 %}
+              <th class="bg-blue-600 rounded text-white text-base py-1 px-3 mx-1">{{tags}}</th>
+              {% endfor %}
+            </tr>
+               </table>
+            <p style="color:red">{{error}}</p>
+          </div>
+        </div>
+        </div>
+      </section>
+</body>
+</html>
