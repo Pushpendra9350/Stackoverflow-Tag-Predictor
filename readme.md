@@ -20,8 +20,8 @@ To download dataset: https://www.kaggle.com/c/facebook-recruiting-iii-keyword-ex
 Actually this is a quite large dataset to work on a small machine.
 
 This project is not have model.py file because i did it in the ipynb and save the models with 100k Datapoints due lack of memory<br>
-To download Model: https://drive.google.com/file/d/1JBUZqcDuzp1uxK2t1Od4BBSnb3AZvatZ/view?usp=sharing<br>
-To Download Vectorizer: https://drive.google.com/file/d/1vgMJ9skOE7ydpS6nRKk0w4ZAaEhETCfY/view?usp=sharing<br>
-To download top 5500 Tag list: https://drive.google.com/file/d/1vObP_nooSik4RQklx9T-CjzqDSCw-6W9/view?usp=sharing<br>
+**To download Model:** https://drive.google.com/file/d/1JBUZqcDuzp1uxK2t1Od4BBSnb3AZvatZ/view?usp=sharing<br>
+**To Download Vectorizer:** https://drive.google.com/file/d/1vgMJ9skOE7ydpS6nRKk0w4ZAaEhETCfY/view?usp=sharing<br>
+**To download top 5500 Tag list:** https://drive.google.com/file/d/1vObP_nooSik4RQklx9T-CjzqDSCw-6W9/view?usp=sharing<br>
 
 To run this application first we need to download all three files which links are given above then put them into the same folder then run python app.py
