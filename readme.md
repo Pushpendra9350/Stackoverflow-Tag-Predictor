@@ -2,7 +2,7 @@
 
 ## VIDEO DEMO: https://youtu.be/ToN2-lN5FAM
 ## SCREENSHOT
-<img width="1440" alt="Stackoverflow screenshot" src="https://user-images.githubusercontent.com/43174363/118758998-b61a2b80-b88d-11eb-8e88-6cfbf359423b.png">
+<img width="1437" alt="Stackoverflow screenshot" src="https://user-images.githubusercontent.com/43174363/118759378-8f102980-b88e-11eb-98c5-e6e9fc356909.png">
 
 ### Problem statement: 
 * Whenever an new question arrive on stackoverflow then we need to predict tags about that question based on the question content.
