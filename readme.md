@@ -1,6 +1,8 @@
 # Stackoverflow Tag Predictor
 
 ## VIDEO DEMO: https://youtu.be/ToN2-lN5FAM
+## SCREENSHOT
+<img width="1440" alt="Stackoverflow screenshot" src="https://user-images.githubusercontent.com/43174363/118758998-b61a2b80-b88d-11eb-8e88-6cfbf359423b.png">
 
 ### Problem statement: 
 * Whenever an new question arrive on stackoverflow then we need to predict tags about that question based on the question content.
