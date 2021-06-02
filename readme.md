@@ -43,7 +43,7 @@ NOTE: Model size is big then I am not able to upload here to download it follow 
 ### Technical Aspects
 
 #### Architecture
-![photo_2021-06-02 19 49 36](https://user-images.githubusercontent.com/43174363/120502136-cd096380-c3df-11eb-92d3-a827d4d0c885.jpeg)
+![photo_2021-06-02 22 51 17](https://user-images.githubusercontent.com/43174363/120525558-dc93a700-c3f5-11eb-9b76-0630df373094.jpeg)
 
 #### About Dataset
 To download dataset: https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/data
